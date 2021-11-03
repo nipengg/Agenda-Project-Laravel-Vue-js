@@ -3,11 +3,13 @@
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
+        "start": "node app.js",
         "watch": "mix watch",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "postinstall": "npm run prod"
     },
     "devDependencies": {
         "axios": "^0.21",
@@ -24,5 +26,8 @@
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "@fortawesome/vue-fontawesome": "^2.0.6",
         "vue": "^2.6.14"
+    },
+    "engines": {
+        "node": "16.x"
     }
 }
